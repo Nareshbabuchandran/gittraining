@@ -1,0 +1,196 @@
+ git clone git@github.com:Nareshbabuchandran/gittraining.git
+   63  ssh-keygen -t rsa
+   64  ssh-keygen -t rsa
+   65  git clone git@github.com:Nareshbabuchandran/gittraining.git
+   66  ls
+   67  cd gittraining/
+   68  mkdir src
+   69  cd src
+   70  vi java1
+   71  build.xml
+   72  vi build.xml
+   73  ls
+   74  mv build.xml ../build/
+   75  mv build.xml ../
+   76  ls
+   77  cd ..
+   78  ls
+   79  git status
+   80  git add src/*
+   81  ls
+   82  git status
+   83  git diff
+   84  git reset src/*
+   85  git ststua
+   86  git status
+   87  git add .
+   88  git statius
+   89  git status
+   90  git diff --stage
+   91  git diff --staged
+   92  git coomit -m "first commit"
+   93  git commit -m "first commit"
+   94  git status
+   95  vi build.xml
+   96  git status
+   97  git add build.xml
+   98  git diff --staged
+   99  git reset build.xml
+  100  git status
+  101  git remote -v
+  102  git push
+  103  git log
+  104  ls
+  105  git status
+  106  cat build.xml
+  107  git add .
+  108  git pull
+  109  cat build.xml
+  110  git status
+  111  cat build.xml
+  112  git commit -m "local update"
+  113  git pull
+  114  cat build.xml
+  115  vi build.xml
+  116  git status
+  117  git add .
+  118  git status
+  119  git commit -m "updated merge conflicts"
+  120  git push
+  121  vi build.xml
+  122  git status
+  123  git status
+  124  git add .
+  125  git commit -m "fetch check from local"
+  126  git fetch
+  127  git status
+  128  vi build.xml
+  129  ls'
+  130  ls
+  131  ls -lrt
+  132  git status
+  133  git fetch origin master
+  134  ls
+  135  vi build.xml
+  136  git merge FETCH_HEAD
+  137  vi build.xml
+  138  git status
+  139  git add .
+  140  git commit -m "fetch worked"
+  141  git push
+  142  git log
+  143  git reset 6916a
+  144  git status
+  145  cat build.xml
+  146  git reset --hard 6916a
+  147  git status
+  148  cat build.xml
+  149  git log --follow java
+  150  git log --follow src/java1
+  151  clear
+  152  git branch
+  153  git branch -b branch1
+  154  git branch branch1
+  155  git checkout branch1
+  156  ls
+  157  vi build.xml
+  158  touch a.txt
+  159  vi a.txt
+  160  git status
+  161  git add a.txt
+  162  git status
+  163  git add build.xml
+  164  git commit -m "Testing branch1"
+  165  git push origin branch1
+  166  vi b.txt
+  167  git status
+  168  git add ,
+  169  git add .
+  170  git checkout master
+  171  git status
+  172  git commit -m "master file update"
+  173  git push
+  174  git push origin master
+  175  git pull
+  176  cat build.xml
+  177  git status
+  178  git push origin master
+  179  git merge branch1
+  180  git status
+  181  vi build.xml
+  182  git status
+  183  git add .
+  184  git commit -m "updated the merge conflicts from branch to master"
+  185  git branch -d branch
+  186  git branch -d branch1
+  187  git push
+  188  git branch -d branch1 origin
+  189  git push origin --delete branch1
+  190  git branch
+  191  clear
+  192  git checkout -b rebasetest
+  193  ls
+  194  vi a.txt
+  195  vi b.txt
+  196  git add.
+  197  git add .
+  198  git commit -m "1st commit in branch"
+  199  vi a.txt
+  200  git add .
+  201  git commit -m "12nd commit in branch"
+  202  vi b.txt
+  203  git status
+  204  git add .
+  205  git commit -m "checking rebase in branch"
+  206  git push origin rebasetest
+  207  git checkout master
+  208  git status
+  209  vi a.txt
+  210  git add .
+  211  git commit -m "testfile update in master"
+  212  git push
+  213  git rebase rebasetest
+  214  git status
+  215  vi a.txt
+  216  git status
+  217  git add .
+  218  git commit -m "tested rebase"
+  219  git status
+  220  git rebase --continue
+  221  git log
+  222  git reset --hard 46a8c3
+  223  git rebase rebasetest
+  224  git rebase --continue
+  225  git rebase --skip
+  226  git log
+  227  git push
+  228  git pull
+  229  vi a.txt
+  230  git add .
+  231  git status
+  232  git commit -m "rebase tested"
+  233  git push
+  234  git status
+  235  git checkout -b cherrypick
+  236  vi cp.txt
+  237  git add .
+  238  git commit -m "cp1"
+  239  vi cp.txt
+  240  git add .
+  241  git commit -m "cp2"
+  242  vi cp.txt
+  243  git commit -m "cp2"
+  244  git add .
+  245  git commit -m "cp3"
+  246  git log
+  247  git push origin cherrypick
+  248  git checkout master
+  249  git cherry-pick 62040
+  250  VI cp.txt
+  251  git status
+  252  git add .
+  253  git commit -m "cherrypicked from branch to master"
+  254  git push
+  255  history
+$ touch ~/.gitignore
+$ git config --global core.excludesFile ~/.gitignore

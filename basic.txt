@@ -1,0 +1,81 @@
+GIT:
+
+git installation:
+
+
+CONFIGURE TOOLING
+$ git config --global user.name "[name]"
+
+$ git config --global user.email "[email address]"
+
+CREATE REPOSITORIES:
+
+git init or git clone
+
+git status
+
+git add .
+
+git commit
+
+MAKE CHANGES
+
+$ git status
+
+$ git add [file]
+
+$ git reset [file]
+
+$ git diff
+
+$ git diff --staged
+
+$ git commit -m "[descriptive message]"
+
+
+$ git fetch [bookmark]
+
+$ git merge [bookmark]/[branch]
+
+$ git push [alias] [branch]
+
+$ git pull
+
+
+REDO COMMITS
+
+$ git reset [commit]
+
+$ git reset --hard [commit]
+
+REVIEW HISTORY
+
+$ git log
+
+$ git log --follow [file]
+
+$ git diff [first-branch]...[second-branch]
+
+$ git show [commit]
+
+GIT Branch:
+
+GROUP CHANGES
+
+$ git branch
+
+$ git branch [branch-name]
+
+$ git checkout [branch-name]
+
+$ git merge [branch]
+
+$ git branch -d [branch-name]
+
+git push origin --delete branch_name
+
+Rebase
+
+
+
+
